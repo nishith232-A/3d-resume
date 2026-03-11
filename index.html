@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Interactive Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="loader"></div>
+        <div class="loading-text">Loading 3D Experience...</div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div id="ui-layer">
+        <div class="header">
+            <h1>ADAPA NISHITH REDDY</h1>
+            <p>Drag to Rotate • Click Faces to Explore</p>
+        </div>
+        <div class="instructions">
+            🖱️ Drag to rotate • 👆 Click any face • 🔍 Scroll to zoom
+        </div>
+    </div>
+
+    <div id="detail-modal">
+        <button class="close-btn" id="close-btn">×</button>
+        <h2 id="modal-title">Title</h2>
+        <p id="modal-content">Content goes here...</p>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
