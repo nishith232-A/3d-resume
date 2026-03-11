@@ -66,5 +66,5 @@ emailElements.forEach(el => {
 
 // Update GitHub and LinkedIn links
 document.querySelector('a[href="https://github.com"]').href = 'https://github.com/nishith232-A';
-document.querySelector('a[href="https://linkedin.com"]').href = 'https://linkedin.com/in/nishith-reddy';
+document.querySelector('a[href="https://linkedin.com"]').href = 'https://www.linkedin.com/in/adapa-nishith-reddy-615177285/';
 document.querySelector('a[href="https://twitter.com"]').href = 'https://twitter.com/nishith';
