@@ -3,43 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Interactive Resume</title>
+    <title>Nishith Reddy - Full Stack Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="loading">
-        <div class="loader"></div>
-        <div class="loading-text">Loading 3D Experience...</div>
-    </div>
-
-    <div id="canvas-container"></div>
-
-    <div id="ui-layer">
-        <div class="header">
-            <h1>ADAPA NISHITH REDDY</h1>
-            <p>Drag to Rotate • Click Faces to Explore</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span>Nishith</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="instructions">
-            🖱️ Drag to rotate • 👆 Click any face • 🔍 Scroll to zoom
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Nishith</span></h1>
+                <p class="subtitle">Entry-level Tech Professional | Cloud • AI • Embedded Systems</p>
+                <p class="description">Building scalable cloud-AI-embedded systems with hands-on expertise in full-stack development, IoT, and emerging technologies.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="animated-cube">
+                    <div class="cube-face front">AWS</div>
+                    <div class="cube-face back">Python</div>
+                    <div class="cube-face right">IoT</div>
+                    <div class="cube-face left">Cloud</div>
+                    <div class="cube-face top">AI/ML</div>
+                    <div class="cube-face bottom">Embedded</div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
 
-    <div id="detail-modal">
-        <button class="close-btn" id="close-btn">×</button>
-        <h2 id="modal-title">Title</h2>
-        <p id="modal-content">Content goes here...</p>
-    </div>
+    <!-- About/Professional Summary -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Certifications & Expertise</h3>
+                    <ul class="features-list">
+                        <li><span class="icon">✓</span> AWS Cloud Practitioner, Azure AI Fundamentals</li>
+                        <li><span class="icon">✓</span> Strong foundation in Java, Python, C/C++, Verilog-HDL</li>
+                        <li><span class="icon">✓</span> Hardware-software co-design (ESP32, Arduino, Cadence)</li>
+                        <li><span class="icon">✓</span> End-to-end data pipelines (Pandas, Scikit-learn, Streamlit)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Three.js from CDN -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
-    
-    <script type="module" src="js/main.js"></script>
+    <!-- Tech Stack -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Verilog-HDL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & AI</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure AI</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Hardware & Embedded</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Cadence</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">ServiceNow</span>
+                        <span class="skill-tag">Streamlit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="experience-date">June 2025 - August 2025</div>
+                    <div class="experience-details">
+                        <h3>AI Intern</h3>
+                        <p class="company">Edunet Foundation</p>
+                        <ul class="experience-list">
+                            <li>Developed ML models for real-world problems</li>
+                            <li>Implemented data pipelines and preprocessing</li>
+                            <li>Collaborated on AI-driven solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>PayGrade AI</h3>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <p>Advanced income prediction system using machine learning algorithms and data analytics to forecast salary ranges based on multiple parameters.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SmartAI Traffic</h3>
+                        <span class="project-tag">AI/IoT</span>
+                    </div>
+                    <p>Intelligent traffic optimization system using AI to analyze and optimize traffic flow, reducing congestion through predictive modeling.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>AI/ML</span>
+                        <span>IoT</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Hardware Co-Design</h3>
+                        <span class="project-tag">Embedded</span>
+                    </div>
+                    <p>Designed and verified hardware-software co-designs using Verilog-HDL, ESP32, and Arduino with real-time embedded solutions.</p>
+                    <div class="project-tech">
+                        <span>Verilog-HDL</span>
+                        <span>ESP32</span>
+                        <span>Cadence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>SuperCoder</h3>
+                    <p>450+ Data Structures & Algorithms problems solved</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥈</div>
+                    <h3>2nd Place</h3>
+                    <p>DevRush Hackathon Winner</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📚</div>
+                    <h3>B.Tech ECE</h3>
+                    <p>KL University - CGPA: 9.59/10</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">I'm always open to new opportunities and interesting conversations</p>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:your-email@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <a href="mailto:your-email@example.com" class="btn btn-primary">Send me an email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nishith Reddy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
