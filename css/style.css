@@ -773,6 +773,8 @@ section {
     color: rgba(255, 255, 255, 0.9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 500;
+    pointer-events: auto;
+    animation: fadeLoader 0.9s ease-in-out 1.7s forwards;
 }
 .hidden {
     opacity: 0;
@@ -792,6 +794,24 @@ section {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+@keyframes fadeLoader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
 #canvas-container {
     position: fixed;
     inset: 0;
