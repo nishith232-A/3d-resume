@@ -271,7 +271,15 @@ window.addEventListener('resize', () => {
 
 // Hide loading
 setTimeout(() => {
-    document.getElementById('loading').classList.add('hidden');
+    const loading = document.getElementById('loading');
+    if (!loading) return;
+
+    loading.classList.add('hidden');
+
+    // Ensure the loader doesn't block interaction even if CSS is cached/old
+    setTimeout(() => {
+        loading.style.display = 'none';
+    }, 400);
 }, 1000);
 
 // Animation Loop
