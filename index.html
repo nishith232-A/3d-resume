@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishith Reddy - Full Stack Developer</title>
+    <title>Nakula — Creative Studio & Portfolio Template</title>
+    <meta name="description" content="Nakula is a bold, modern template for creative portfolios, agency sites, and landing pages. Launch fast with a ready-to-go, high-impact design.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,13 +14,13 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-icon">◆</span>
-                <span>Nishith</span>
+                <span>Nakula</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -34,22 +35,31 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Hi, I'm <span class="highlight">A.Nishith Reddy</span></h1>
-                <p class="subtitle">Entry-level Tech Professional | Cloud • AI • Embedded Systems</p>
-                <p class="description">Building scalable cloud-AI-embedded systems with hands-on expertise in full-stack development, IoT, and emerging technologies.</p>
+                <h1>Build a bold portfolio<br><span class="highlight">that clients remember</span></h1>
+                <p class="subtitle">Professional landing pages, case studies, and agency experiences—built fast, polished for every device.</p>
+                <p class="description">Nakula is a modern creative studio template designed for designers, freelancers, and agencies who want to launch a high‑impact site in hours, not weeks.</p>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#work" class="btn btn-primary">See Case Studies</a>
+                    <a href="#contact" class="btn btn-secondary">Start a Project</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="animated-cube">
-                    <div class="cube-face front">AWS</div>
-                    <div class="cube-face back">Python</div>
-                    <div class="cube-face right">IoT</div>
-                    <div class="cube-face left">Cloud</div>
-                    <div class="cube-face top">AI/ML</div>
-                    <div class="cube-face bottom">Embedded</div>
+                <div class="hero-grid">
+                    <div class="hero-card">
+                        <div class="hero-card-tag">Brand System</div>
+                        <h3>Bold visual identity</h3>
+                        <p>Stand out with a distinctive, flexible brand system that scales across screens.</p>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-tag">Landing Page</div>
+                        <h3>Convert visitors</h3>
+                        <p>Fast, focused landing pages designed to drive action and capture leads.</p>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hero-card-tag">Case Studies</div>
+                        <h3>Show your process</h3>
+                        <p>Tell a compelling story behind your best work, with visuals and outcomes.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,156 +68,98 @@
         </div>
     </section>
 
-    <!-- About/Professional Summary -->
-    <section id="about" class="about">
+    <!-- Services -->
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Certifications & Expertise</h3>
-                    <ul class="features-list">
-                        <li><span class="icon">✓</span> AWS Cloud Practitioner, Azure AI Fundamentals</li>
-                        <li><span class="icon">✓</span> Strong foundation in Java, Python, C/C++, Verilog-HDL</li>
-                        <li><span class="icon">✓</span> Hardware-software co-design (ESP32, Arduino, Cadence)</li>
-                        <li><span class="icon">✓</span> End-to-end data pipelines (Pandas, Scikit-learn, Streamlit)</li>
+            <h2 class="section-title">What we do</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Creative Direction</h3>
+                    <p>From concept to launch, we craft brand-driven web experiences that feel premium and polished.</p>
+                    <ul>
+                        <li>Brand systems & guidelines</li>
+                        <li>UI direction & components</li>
+                        <li>Creative asset production</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Design & Prototyping</h3>
+                    <p>Rapid design iterations with interactive prototypes that stakeholders can feel and test.</p>
+                    <ul>
+                        <li>High‑fidelity UI design</li>
+                        <li>Framer/No‑code prototype build</li>
+                        <li>User journey mapping</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Build & Launch</h3>
+                    <p>Clean, performant front‑end builds that look great on every device and load fast.</p>
+                    <ul>
+                        <li>Responsive modern layouts</li>
+                        <li>Deployment & hosting setup</li>
+                        <li>Performance optimizations</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section id="tech-stack" class="tech-stack">
+    <!-- Work / Case Studies -->
+    <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Programming</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">Verilog-HDL</span>
+            <h2 class="section-title">Case Studies</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-card-header">
+                        <h3>Nakula Studio</h3>
+                        <span class="work-tag">Brand + Web</span>
+                    </div>
+                    <p>Full design system and conversion-focused landing page for a creative studio—built to win clients and make every project feel premium.</p>
+                    <div class="work-meta">
+                        <span>Design • Prototype • Launch</span>
+                        <span>5 weeks</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Cloud & AI</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Azure AI</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Data Science</span>
+                <div class="work-card">
+                    <div class="work-card-header">
+                        <h3>Velocity Agency</h3>
+                        <span class="work-tag">Agency Website</span>
+                    </div>
+                    <p>Modern agency website with bold visuals, interactive section transitions, and a lead capture system that scales.</p>
+                    <div class="work-meta">
+                        <span>Branding • UI • Deployment</span>
+                        <span>4 weeks</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h4>Hardware & Embedded</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ESP32</span>
-                        <span class="skill-tag">Arduino</span>
-                        <span class="skill-tag">IoT</span>
-                        <span class="skill-tag">Cadence</span>
+                <div class="work-card">
+                    <div class="work-card-header">
+                        <h3>Edge Product Launch</h3>
+                        <span class="work-tag">Landing Page</span>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Tools & Platforms</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">ServiceNow</span>
-                        <span class="skill-tag">Streamlit</span>
+                    <p>High-conversion product launch page with scroll-driven storytelling and clear next‑step calls to action.</p>
+                    <div class="work-meta">
+                        <span>Strategy • Design • Build</span>
+                        <span>3 weeks</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Experience -->
-    <section id="experience" class="experience">
+    <!-- About -->
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-card">
-                    <div class="experience-date">June 2025 - August 2025</div>
-                    <div class="experience-details">
-                        <h3>AI Intern</h3>
-                        <p class="company">Edunet Foundation</p>
-                        <ul class="experience-list">
-                            <li>Developed ML models for real-world problems</li>
-                            <li>Implemented data pipelines and preprocessing</li>
-                            <li>Collaborated on AI-driven solutions</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>PayGrade AI</h3>
-                        <span class="project-tag">Machine Learning</span>
-                    </div>
-                    <p>Advanced income prediction system using machine learning algorithms and data analytics to forecast salary ranges based on multiple parameters.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Scikit-learn</span>
-                        <span>Pandas</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>SmartAI Traffic</h3>
-                        <span class="project-tag">AI/IoT</span>
-                    </div>
-                    <p>Intelligent traffic optimization system using AI to analyze and optimize traffic flow, reducing congestion through predictive modeling.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>AI/ML</span>
-                        <span>IoT</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Hardware Co-Design</h3>
-                        <span class="project-tag">Embedded</span>
-                    </div>
-                    <p>Designed and verified hardware-software co-designs using Verilog-HDL, ESP32, and Arduino with real-time embedded solutions.</p>
-                    <div class="project-tech">
-                        <span>Verilog-HDL</span>
-                        <span>ESP32</span>
-                        <span>Cadence</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">🏆</div>
-                    <h3>SuperCoder</h3>
-                    <p>450+ Data Structures & Algorithms problems solved</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">🥈</div>
-                    <h3>2nd Place</h3>
-                    <p>DevRush Hackathon Winner</p>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">📚</div>
-                    <h3>B.Tech ECE</h3>
-                    <p>KL University - CGPA: 9.59/10</p>
+            <h2 class="section-title">About Nakula</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A modern studio for creators</h3>
+                    <p>We help designers, freelancers, and agencies launch beautiful, high‑performance websites without overcomplicating the process. Our focus is on clarity, speed, and impact.</p>
+                    <ul class="features-list">
+                        <li><span class="icon">✓</span> Fast edits: ship updates in hours, not weeks</li>
+                        <li><span class="icon">✓</span> Fully responsive across mobile, tablet & desktop</li>
+                        <li><span class="icon">✓</span> Built for conversion: clear hierarchy + strong calls</li>
+                        <li><span class="icon">✓</span> Supports your design tools: Framer, Figma, or code</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -216,29 +168,30 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">I'm always open to new opportunities and interesting conversations</p>
-            
+            <h2 class="section-title">Work together</h2>
+            <p class="contact-subtitle">Ready to launch your next portfolio, product, or creative agency site? Let's plan it.</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/adapa-nishith-reddy-615177285/" target="_blank" class="social-link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com" target="_blank" class="social-link">
+                <a href="https://github.com/nishith232-A" target="_blank" class="social-link">
                     <i class="fab fa-github"></i>
                 </a>
-               
+                <a href="https://twitter.com/nishith" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
                 <a href="mailto:adapanishithreddy121@gmail.com" class="social-link">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
-            
-            <a href="mailto:your-adapanishithreddy121@.com" class="btn btn-primary">Send me an email</a>
+            <a href="mailto:adapanishithreddy121@gmail.com" class="btn btn-primary">Start a Conversation</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Nishith Reddy. All rights reserved.</p>
+        <p>For more Framer templates, visit <a href="https://framer.com" target="_blank">framer.com</a>.</p>
+        <p>&copy; 2024 Nakula. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js"></script>
