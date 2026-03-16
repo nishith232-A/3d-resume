@@ -59,9 +59,9 @@ document.querySelectorAll('.project-card, .skill-category, .experience-card, .ac
 });
 
 // Update email links
-const emailElements = document.querySelectorAll('a[href="mailto:your-email@example.com"]');
+const emailElements = document.querySelectorAll('a[href="mailto:adapanishithreddy121@gmail.com"]');
 emailElements.forEach(el => {
-    el.href = 'mailto:nishith@example.com';
+    el.href = 'mailto:adapanishithreddy121@gmail.com';
 });
 
 // Update GitHub and LinkedIn links
