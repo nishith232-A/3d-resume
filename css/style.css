@@ -774,6 +774,12 @@ section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 500;
 }
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
 .loader {
     width: 64px;
     height: 64px;
@@ -842,7 +848,7 @@ section {
     transition: transform 0.25s ease, opacity 0.25s ease;
     z-index: 100;
 }
-#detail-modal.open {
+#detail-modal.active {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
